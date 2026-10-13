@@ -1,0 +1,110 @@
+{
+  "PDP Title": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'MPProductMainDesc')]/h1"
+  },
+  "PDP Product Code": {
+    "locatorType": "XPATH",
+    "locatorValue": "//span[contains(@class,'MPProductMainDesc-ProductCode')]"
+  },
+  "PDP Breadcrumb Active": {
+    "locatorType": "XPATH",
+    "locatorValue": "//span[contains(@class,'MPProduct-Breadcrumb-Active')]"
+  },
+  "PDP Rating": {
+    "locatorType": "XPATH",
+    "locatorValue": "//span[contains(@class,'MPProductMainDesc-Rating')]"
+  },
+  "PDP Main Image": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[contains(@class,'MPProductSlider-Main-Image')]//img)[1]"
+  },
+  "PDP Thumbnails": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'MPProductSlider-Thumbnails-Thumbnail')]"
+  },
+  "PDP Favorite Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'MPProductMainDesc-Favorite')]"
+  },
+  "PDP Favorite Text": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'MPProductMainDesc-Favorite')]//div[contains(@class,'MPAddToFavorites-Text')]"
+  },
+  "PDP Price": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[contains(@class,'MPProductPriceOffers')]//*[(@data-info='item-desc-price-new' or (@data-info='item-desc-price-old' and not(contains(@class,'line-through'))))])[1]"
+  },
+  "PDP Price Old": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'MPProductMainDesc-OfferPrice')]//*[@data-info='item-desc-price-old']"
+  },
+  "PDP Discount Label": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='discount-label']"
+  },
+  "PDP Credit Info": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[contains(@class,'MPProductPriceOffers')]//*[@data-info='item-desc-credit-raw'])[1]"
+  },
+  "Credit Calculator": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='credit-calc-block']"
+  },
+  "Credit Calculator Title": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='credit-calc-title']"
+  },
+  "Credit Option 6 Months": {
+    "locatorType": "XPATH",
+    "locatorValue": "//button[starts-with(@data-info,'credit-calc-button-item')][.//span[@data-info='credit-calc-button-item-raw' and normalize-space()='6']]"
+  },
+  "Credit Option 12 Months": {
+    "locatorType": "XPATH",
+    "locatorValue": "//button[starts-with(@data-info,'credit-calc-button-item')][.//span[@data-info='credit-calc-button-item-raw' and normalize-space()='12']]"
+  },
+  "Credit Option 18 Months": {
+    "locatorType": "XPATH",
+    "locatorValue": "//button[starts-with(@data-info,'credit-calc-button-item')][.//span[@data-info='credit-calc-button-item-raw' and normalize-space()='18']]"
+  },
+  "Credit Option 24 Months": {
+    "locatorType": "XPATH",
+    "locatorValue": "//button[starts-with(@data-info,'credit-calc-button-item')][.//span[@data-info='credit-calc-button-item-raw' and normalize-space()='24']]"
+  },
+  "Credit Option Selected": {
+    "locatorType": "XPATH",
+    "locatorValue": "//button[@data-info='credit-calc-button-item-selected']"
+  },
+  "PDP Add To Cart Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//button[@data-info='add-to-cart-product']"
+  },
+  "PDP In Cart Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//button[@data-info='add-to-cart-product'][contains(@class,'IN_CART')]"
+  },
+  "Other Sellers Block": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'MPProductPricesOtherSellers-List')]"
+  },
+  "Show All Characteristics Link": {
+    "locatorType": "XPATH",
+    "locatorValue": "//a[@data-info='show-all-characteristics-link']"
+  },
+  "Description Tab General": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'MPProductDescription-TabsWrapper')]/a[normalize-space()='Ümumi təsvir']"
+  },
+  "Description Tab Features": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'MPProductDescription-TabsWrapper')]/a[normalize-space()='Xüsusiyyətlər']"
+  },
+  "Description Tab Reviews": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'MPProductDescription-TabsWrapper')]/a[contains(normalize-space(.),'Məhsul haqqında rəylər')]"
+  },
+  "Reviews Block": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='product-review-block']"
+  }
+}

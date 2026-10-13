@@ -1,0 +1,146 @@
+{
+  "Page Heading": {
+    "locatorType": "XPATH",
+    "locatorValue": "//h1"
+  },
+  "Breadcrumb": {
+    "locatorType": "XPATH",
+    "locatorValue": "//ul[@itemtype='https://schema.org/BreadcrumbList']"
+  },
+  "Products Found Count": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[contains(@class,'MPProductsFoundCount')]"
+  },
+  "Sort Box": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='select-box']"
+  },
+  "Sort Selected Label": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[contains(@class,'MPSortBy-Selected')]"
+  },
+  "Sort Dropdown": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='select-dropdown']"
+  },
+  "Sort Active Option": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[contains(@class,'USelect-DropdownItemBox') and contains(@class,'active')]"
+  },
+  "Sort Option Cheapest": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='select-dropdown-item-box'][contains(normalize-space(.),'Ən ucuz')]"
+  },
+  "Sort Option Most Expensive": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='select-dropdown-item-box'][contains(normalize-space(.),'Ən bahalı')]"
+  },
+  "Sort Option Popular": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='select-dropdown-item-box'][contains(normalize-space(.),'Populyar')]"
+  },
+  "Sort Option Top Rated": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='select-dropdown-item-box'][contains(normalize-space(.),'Yüksək reytinq')]"
+  },
+  "Sort Option Biggest Discount": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='select-dropdown-item-box'][contains(normalize-space(.),'Ən böyük endirimli')]"
+  },
+  "Sort Option Newest": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='select-dropdown-item-box'][contains(normalize-space(.),'Yeniliklər')]"
+  },
+  "Product Card": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[@data-product-id][not(ancestor::*[contains(@class,'MPViewed') or contains(@class,'MPPS') or contains(@class,'Slider') or contains(@class,'Recommendation') or contains(@class,'MegaDiscounts') or contains(@class,'MPSimilar')])]"
+  },
+  "First Product Card": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[@data-product-id][not(ancestor::*[contains(@class,'MPViewed') or contains(@class,'MPPS') or contains(@class,'Slider') or contains(@class,'Recommendation') or contains(@class,'MegaDiscounts') or contains(@class,'MPSimilar')])])[1]"
+  },
+  "First Product Link": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[@data-product-id][not(ancestor::*[contains(@class,'MPViewed') or contains(@class,'MPPS') or contains(@class,'Slider') or contains(@class,'Recommendation') or contains(@class,'MegaDiscounts') or contains(@class,'MPSimilar')])]//a[contains(@href,'/product/')])[1]"
+  },
+  "First Product Title": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[@data-product-id][not(ancestor::*[contains(@class,'MPViewed') or contains(@class,'MPPS') or contains(@class,'Slider') or contains(@class,'Recommendation') or contains(@class,'MegaDiscounts') or contains(@class,'MPSimilar')])]//span[contains(@class,'MPTitle')])[1]"
+  },
+  "First Product Price": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[@data-product-id][not(ancestor::*[contains(@class,'MPViewed') or contains(@class,'MPPS') or contains(@class,'Slider') or contains(@class,'Recommendation') or contains(@class,'MegaDiscounts') or contains(@class,'MPSimilar')])]//*[(@data-info='item-desc-price-new' or (@data-info='item-desc-price-old' and not(contains(@class,'line-through'))))])[1]"
+  },
+  "First Product Add To Cart": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[@data-product-id][not(ancestor::*[contains(@class,'MPViewed') or contains(@class,'MPPS') or contains(@class,'Slider') or contains(@class,'Recommendation') or contains(@class,'MegaDiscounts') or contains(@class,'MPSimilar')])]//button[contains(@class,'AddToCart')])[1]"
+  },
+  "First Product Favorite Icon": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[@data-product-id][not(ancestor::*[contains(@class,'MPViewed') or contains(@class,'MPPS') or contains(@class,'Slider') or contains(@class,'Recommendation') or contains(@class,'MegaDiscounts') or contains(@class,'MPSimilar')])]//div[contains(@class,'MPAddToFavorites-Icon')])[1]"
+  },
+  "Product Prices": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[@data-product-id][not(ancestor::*[contains(@class,'MPViewed') or contains(@class,'MPPS') or contains(@class,'Slider') or contains(@class,'Recommendation') or contains(@class,'MegaDiscounts') or contains(@class,'MPSimilar')])]//*[(@data-info='item-desc-price-new' or (@data-info='item-desc-price-old' and not(contains(@class,'line-through'))))]"
+  },
+  "Product Discount Badge": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[@data-product-id][not(ancestor::*[contains(@class,'MPViewed') or contains(@class,'MPPS') or contains(@class,'Slider') or contains(@class,'Recommendation') or contains(@class,'MegaDiscounts') or contains(@class,'MPSimilar')])]//div[contains(@class,'MPProductItem-Discount')]"
+  },
+  "Product Credit Info": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[@data-product-id][not(ancestor::*[contains(@class,'MPViewed') or contains(@class,'MPPS') or contains(@class,'Slider') or contains(@class,'Recommendation') or contains(@class,'MegaDiscounts') or contains(@class,'MPSimilar')])]//*[@data-info='item-desc-credit-raw']"
+  },
+  "Discount Filter Checkbox": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[contains(@class,'MPFilter-Title')][contains(normalize-space(.),'Endirimli')]/following::label[contains(@class,'UCheckbox-Label')][1]"
+  },
+  "Price Min Input": {
+    "locatorType": "XPATH",
+    "locatorValue": "//input[@name='selectMin']"
+  },
+  "Price Max Input": {
+    "locatorType": "XPATH",
+    "locatorValue": "//input[@name='selectMax']"
+  },
+  "Price Filter OK Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[contains(@class,'MPFilterType-Range')]//button[@type='button']"
+  },
+  "Filter Reset Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//button[contains(@class,'reset')]"
+  },
+  "Filter Submit Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//button[contains(@class,'submit')]"
+  },
+  "Show More Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[contains(@class,'MPProductsShowMoreButton')]"
+  },
+  "Pagination": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[contains(concat(' ',normalize-space(@class),' '),' MPProductPagination ')]"
+  },
+  "Pagination Page Item": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[contains(@class,'MPProductPagination-PageItem')]"
+  },
+  "Next Page Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[contains(@class,'MPProductPagination-PageItem') and contains(@class,'Next')]"
+  },
+  "Product Old Prices": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[@data-product-id][not(ancestor::*[contains(@class,'MPViewed') or contains(@class,'MPPS') or contains(@class,'Slider') or contains(@class,'Recommendation') or contains(@class,'MegaDiscounts') or contains(@class,'MPSimilar')])]//*[@data-info='item-desc-price-old' and contains(@class,'line-through')]"
+  },
+  "Sort Option Item": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='select-dropdown-item-box']"
+  },
+  "Breadcrumb Home Link": {
+    "locatorType": "XPATH",
+    "locatorValue": "//ul[@itemtype='https://schema.org/BreadcrumbList']//a[@href='/']"
+  }
+}

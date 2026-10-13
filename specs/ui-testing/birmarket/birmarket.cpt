@@ -1,0 +1,45 @@
+# Birmarket ana sehifesini aç
+* Birmarket "https://birmarket.az/" sehifesini aç
+* "Search Input" görsensin deye maksimum "20" saniye gözle
+
+# Birmarket <url> sehifesini aç
+* "chrome" brauzeri aç ve keçid et <url>
+* Pencere ölçüsünü "1920" x "1080" et
+* Bütün cookie-leri sil
+* LocalStorage ve SessionStorage-i temizle
+* Sehifeni yenile
+* Sehifenin tam yüklenmesini gözle
+* Şeher penceresi açılarsa bağla
+
+# Şeher penceresi açılarsa bağla
+* "City Popup Close" elementi "5" saniye içinde görünerse klik et
+* "City Popup" yox olana qeder maksimum "5" saniye gözle
+* "Notification Popup Cancel" elementi "2" saniye içinde görünerse klik et
+
+# Axtarış sahesine <query> yaz ve Axtar düymesine bas
+* "Search Input" elementine <query> yaz
+* "Search Button" elementine klik et
+* Sehifenin tam yüklenmesini gözle
+
+# Kateqoriya sehifesini aç ve mehsulların yüklenmesini gözle
+* Birmarket "https://birmarket.az/categories/2" sehifesini aç
+* "First Product Card" görsensin deye maksimum "20" saniye gözle
+
+# Kateqoriyadan ilk mehsulun PDP sehifesini aç
+* Birmarket "https://birmarket.az/categories/129-yag-qizdiricilari" sehifesini aç
+* "First Product Link" görsensin deye maksimum "20" saniye gözle
+* "First Product Link" elementine klik et
+* Yeni açılan taba keç
+* "PDP Title" görsensin deye maksimum "20" saniye gözle
+* Şeher penceresi açılarsa bağla
+
+# Birmarket giriş ekranında Daxil ol düymesine bas
+* Sehifede "Davam etmək üçün daxil olun" yazısı olmalıdır
+* "Daxil ol" metnli elemente klik et
+* "Phone Number Input" görsensin deye maksimum "20" saniye gözle
+
+# Telefon ile giriş sehifesini aç
+* Birmarket ana sehifesini aç
+* "Auth Link" elementine klik et
+* Sehifenin tam yüklenmesini gözle
+* Birmarket giriş ekranında Daxil ol düymesine bas

@@ -1,0 +1,126 @@
+{
+  "Cart Title": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'Cart-Title')]/h1"
+  },
+  "Cart Items Count Text": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'Cart-Title')]/p"
+  },
+  "Free Delivery Banner": {
+    "locatorType": "XPATH",
+    "locatorValue": "//p[normalize-space()='Sizin pulsuz çatdırılmanız var']"
+  },
+  "Select All Checkbox": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[@data-info='select-all']//label"
+  },
+  "Select Product Checkbox": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[@data-info='select-product']//label)[1]"
+  },
+  "Delete Selected Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//button[@data-info='delete-selected']"
+  },
+  "Cart Product": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(concat(' ',normalize-space(@class),' '),' CartProduct ')]"
+  },
+  "Cart Product Title": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[contains(@class,'CartProduct-Descriptions')]//div[@class='Title']//a)[1]"
+  },
+  "Cart Product Price": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[contains(@class,'CartProduct-Descriptions')]//*[@data-info='item-desc-price-new'])[1]"
+  },
+  "Cart Seller Name": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//*[@data-info='item-desc-seller-raw'])[1]"
+  },
+  "Stock Left Text": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[contains(@class,'MPProductsLeftovers')]/p)[1]"
+  },
+  "Quantity Minus Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//button[contains(@class,'ProductQuantity-Minus')])[1]"
+  },
+  "Quantity Plus Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//button[contains(@class,'ProductQuantity-Plus')])[1]"
+  },
+  "Quantity Input": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//input[contains(@class,'ProductQuantity-Input')])[1]"
+  },
+  "Cart Remove Icon": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//a[@class='Remove'])[1]"
+  },
+  "Delete Confirm Popup": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'confirmRemoveFromCart')]"
+  },
+  "Delete Confirm Title": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'confirmRemoveFromCart')]//h5"
+  },
+  "Delete Confirm Text": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'confirmRemoveFromCart')]//div[@class='Popup-Content']/p"
+  },
+  "Delete Confirm Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'BlockButtonDelete')]/button"
+  },
+  "Delete Move To Favorites Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'BlockButtonDelete')]//span[normalize-space()='Seçilmişlər']"
+  },
+  "Delete Popup Close": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'confirmRemoveFromCart')]//*[name()='svg' and contains(@class,'Popup-Close')]"
+  },
+  "Seller Total": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//*[@data-info='total-for-seller'])[1]"
+  },
+  "Order Sum Label": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//*[@data-info='sum-orders-label'])[1]"
+  },
+  "Order Sum Amount": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//*[@data-info='sum-orders-amount'])[1]"
+  },
+  "Checkout Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//button[@data-info='button-to-checkout']"
+  },
+  "Credit Checkout Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//button[@data-info='button-to-credit']"
+  },
+  "Empty Cart Title": {
+    "locatorType": "XPATH",
+    "locatorValue": "//span[@data-info='empty-cart']"
+  },
+  "Empty Cart Hint": {
+    "locatorType": "XPATH",
+    "locatorValue": "//span[@data-info='empty-cart']/following-sibling::span[1]"
+  },
+  "Empty Cart My Orders Link": {
+    "locatorType": "XPATH",
+    "locatorValue": "//a[@data-info='my-orders']"
+  },
+  "Empty Cart Catalog Link": {
+    "locatorType": "XPATH",
+    "locatorValue": "//a[@data-info='catalog']"
+  },
+  "Recently Viewed Block": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'MPViewed')]"
+  }
+}

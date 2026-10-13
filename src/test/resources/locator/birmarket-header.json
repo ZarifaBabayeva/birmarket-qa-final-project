@@ -1,0 +1,118 @@
+{
+  "Header Logo": {
+    "locatorType": "XPATH",
+    "locatorValue": "//a[@title='Birmarket.az ana səhifəsinə keçin']"
+  },
+  "Search Input": {
+    "locatorType": "XPATH",
+    "locatorValue": "//input[contains(@class,'QuickSearch-Input')]"
+  },
+  "Search Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//form[contains(@class,'QuickSearch')]/button"
+  },
+  "Search Clear Icon": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='search-input-cancel']"
+  },
+  "Catalog Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//span[normalize-space()='Məhsul kataloqu']"
+  },
+  "All Categories Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "//button[contains(@class,'MPLandingMenu-ShowAllCategory')]"
+  },
+  "Auth Link": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//a[@href='/auth/authentication'])[1]"
+  },
+  "Header Favorites Link": {
+    "locatorType": "XPATH",
+    "locatorValue": "//header//a[@href='/favorites']"
+  },
+  "Header Favorites Count": {
+    "locatorType": "XPATH",
+    "locatorValue": "//header//a[@href='/favorites']//em"
+  },
+  "Header Cart Link": {
+    "locatorType": "XPATH",
+    "locatorValue": "//header//a[@href='/cart']"
+  },
+  "Header Cart Count": {
+    "locatorType": "XPATH",
+    "locatorValue": "//header//a[@href='/cart']//em"
+  },
+  "Hotline Link": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//a[@href='tel:915'])[1]"
+  },
+  "Sell On Birmarket Link": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//a[@href='https://business.umico.az'])[1]"
+  },
+  "City Picker Block": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='citypicker-block']"
+  },
+  "Current City": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='citypicker-current-city']"
+  },
+  "City Popup": {
+    "locatorType": "XPATH",
+    "locatorValue": "//section[@data-info='select-city-popup']"
+  },
+  "City Popup Title": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='select-city-popup-title']"
+  },
+  "City Popup Close": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='close-icon-select-city-popup']"
+  },
+  "City List": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='select-city-list']"
+  },
+  "Selected City Item": {
+    "locatorType": "XPATH",
+    "locatorValue": "//li[@data-info='select-city-item-selected']//span[@itemprop='name']"
+  },
+  "Selected City Check Icon": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[@data-info='select-city-item-selected-icon']"
+  },
+  "City Item Sumqayit": {
+    "locatorType": "XPATH",
+    "locatorValue": "//li[starts-with(@data-info,'select-city-item')]//span[@itemprop='name' and normalize-space()='Sumqayıt']"
+  },
+  "City Item Ganja": {
+    "locatorType": "XPATH",
+    "locatorValue": "//li[starts-with(@data-info,'select-city-item')]//span[@itemprop='name' and normalize-space()='Gəncə']"
+  },
+  "City Item Baku": {
+    "locatorType": "XPATH",
+    "locatorValue": "//li[starts-with(@data-info,'select-city-item')]//span[@itemprop='name' and normalize-space()='Bakı']"
+  },
+  "Language Select Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[contains(@class,'LangSelect-Button')])[1]"
+  },
+  "Language Option Russian": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[contains(@class,'LangSelect-Dropdown')])[1]//span[normalize-space()='Русский']"
+  },
+  "Language Option Azerbaijani": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[contains(@class,'LangSelect-Dropdown')])[1]//span[normalize-space()='Azərbaycan']"
+  },
+  "Html Root": {
+    "locatorType": "XPATH",
+    "locatorValue": "//html"
+  },
+  "Notification Popup Cancel": {
+    "locatorType": "XPATH",
+    "locatorValue": "//button[normalize-space()='Ləğv et']"
+  }
+}

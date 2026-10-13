@@ -1,0 +1,62 @@
+{
+  "Auth Page Title": {
+    "locatorType": "XPATH",
+    "locatorValue": "//span[contains(@class,'title--desktop')]"
+  },
+  "Login Method Title": {
+    "locatorType": "XPATH",
+    "locatorValue": "//p[contains(@class,'login-method-title')]"
+  },
+  "Phone Number Input": {
+    "locatorType": "ID",
+    "locatorValue": "phoneNumber"
+  },
+  "Send Code Button": {
+    "locatorType": "ID",
+    "locatorValue": "btn"
+  },
+  "Phone Error Message": {
+    "locatorType": "ID",
+    "locatorValue": "usernameError"
+  },
+  "Phone Clear Icon": {
+    "locatorType": "XPATH",
+    "locatorValue": "//span[contains(@class,'login-input-clear-icon')]"
+  },
+  "Terms Link": {
+    "locatorType": "ID",
+    "locatorValue": "termsSheetTrigger"
+  },
+  "Terms Sheet": {
+    "locatorType": "ID",
+    "locatorValue": "termsSheet"
+  },
+  "Terms Sheet Close": {
+    "locatorType": "ID",
+    "locatorValue": "termsSheetClose"
+  },
+  "OTP Prompt": {
+    "locatorType": "XPATH",
+    "locatorValue": "//h3[contains(@class,'sms-otp-prompt')]"
+  },
+  "OTP Input": {
+    "locatorType": "ID",
+    "locatorValue": "otp-code-number"
+  },
+  "OTP Error Message": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'otp-error')]"
+  },
+  "OTP Countdown": {
+    "locatorType": "ID",
+    "locatorValue": "countDown"
+  },
+  "OTP Resend Button": {
+    "locatorType": "ID",
+    "locatorValue": "resend-btn"
+  },
+  "OTP Back Button": {
+    "locatorType": "ID",
+    "locatorValue": "reset-btn"
+  }
+}

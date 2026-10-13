@@ -1,0 +1,34 @@
+{
+  "Favorites Page Title": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'Box-Title')]/span"
+  },
+  "Favorites Product List": {
+    "locatorType": "ID",
+    "locatorValue": "FavoriteProducts"
+  },
+  "Favorites Product Card": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[@data-list-name='favorites']"
+  },
+  "Favorites First Product Title": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[@data-list-name='favorites']//span[contains(@class,'MPTitle')])[1]"
+  },
+  "Favorites First Product Price": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[@data-list-name='favorites']//*[starts-with(@data-info,'item-desc-price')])[1]"
+  },
+  "Favorites Remove Icon": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[@data-list-name='favorites']//div[contains(@class,'MPAddToFavorites-InFavorites')])[1]"
+  },
+  "Favorites Add To Cart Button": {
+    "locatorType": "XPATH",
+    "locatorValue": "(//div[@data-list-name='favorites']//button[contains(@class,'AddToCart')])[1]"
+  },
+  "Favorite Filled Icon": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[contains(@class,'MPAddToFavorites-InFavorites')]"
+  }
+}

@@ -1,0 +1,87 @@
+# FP user1 ilə yeni sandbox aç
+* Set base Url to "https://api.anarabbas.com"
+* "/auth/login" ünvanına "fp-login-user1.json" ile yeni sessiya açaraq login ol ve "token" tokenini yadda saxla
+
+# FP user2 tokenini al ve user1 üçün yeni sandbox aç
+* Set base Url to "https://api.anarabbas.com"
+* "/auth/login" ünvanına "fp-login-user2.json" ile yeni sessiya açaraq login ol ve "token" tokenini yadda saxla
+* "user2Token" deyişenine "${token}" deyerini ver
+* "/auth/login" ünvanına "fp-login-user1.json" ile yeni sessiya açaraq login ol ve "token" tokenini yadda saxla
+
+# FP alıcı yarat <fullName> <iban> <currency> <nickname> ve id-ni <variable> olaraq saxla
+* "fpFullName" deyişenine <fullName> deyerini ver
+* "fpIban" deyişenine <iban> deyerini ver
+* "fpCurrency" deyişenine <currency> deyerini ver
+* "fpNickname" deyişenine <nickname> deyerini ver
+* Initalize request specification
+* Add Endpoint "/beneficiaries"
+* Add as a header "Authorization" = "token"
+* Add as a header "Content-Type" = "application/json"
+* FP alıcı body-sini qur
+* Post request and display respons
+* Status kodunun "201" olmalıdır
+* Save value of "id" as <variable>
+
+# FP kart buraxılır <amount> ve id-ni <variable> olaraq saxla
+* "fpAmount" deyişenine <amount> deyerini ver
+* Initalize request specification
+* Add Endpoint "/cards"
+* Add as a header "Authorization" = "token"
+* Add as a header "Content-Type" = "application/json"
+* Add body as text "{\"accountId\":\"acc_002\",\"initialAmount\":${fpAmount}}"
+* Post request and display respons
+* Status kodunun "201" olmalıdır
+* Save value of "id" as <variable>
+
+# FP kartın statusunu dəyiş <card> <reason>
+* "fpCard" deyişenine <card> deyerini ver
+* "fpReason" deyişenine <reason> deyerini ver
+* Initalize request specification
+* Add Endpoint "/cards/${fpCard}/block"
+* Add as a header "Authorization" = "token"
+* Add as a header "Content-Type" = "application/json"
+* Add body as text "{\"reason\":\"${fpReason}\"}"
+* Post request and display respons
+* Status kodunun "200" olmalıdır
+
+# FP ödəniş et <card> <billerId> <subscriberNo> <amount>
+* "fpCard" deyişenine <card> deyerini ver
+* "fpBiller" deyişenine <billerId> deyerini ver
+* "fpSub" deyişenine <subscriberNo> deyerini ver
+* "fpAmount" deyişenine <amount> deyerini ver
+* Initalize request specification
+* Add Endpoint "/bill-payments"
+* Add as a header "Authorization" = "token"
+* Add as a header "Content-Type" = "application/json"
+* Add as a header "Idempotency-Key" = "${random.uuid}"
+* Add body as text "{\"cardId\":\"${fpCard}\",\"billerId\":\"${fpBiller}\",\"subscriberNo\":\"${fpSub}\",\"amount\":${fpAmount}}"
+* Post request and display respons
+* Status kodunun "201" olmalıdır
+
+# FP siyahı testləri üçün 5 alıcı yarat
+* FP alıcı yarat "Nigar Əliyeva" "AZ12NABZ00000000000000000101" "AZN" "Anam" ve id-ni "l1" olaraq saxla
+* FP alıcı yarat "Cavid Həsənov" "AZ12NABZ00000000000000000102" "USD" "-" ve id-ni "l2" olaraq saxla
+* FP alıcı yarat "Çingiz Abbasov" "AZ12NABZ00000000000000000103" "AZN" "-" ve id-ni "l3" olaraq saxla
+* FP alıcı yarat "Əli Rzayev" "AZ12NABZ00000000000000000104" "USD" "-" ve id-ni "l4" olaraq saxla
+* FP alıcı yarat "Elvin Quliyev" "AZ12NABZ00000000000000000105" "EUR" "-" ve id-ni "l5" olaraq saxla
+
+# FP tarixçə üçün 18 ödəniş et (12 Azercell, 6 CityNet)
+* FP kart buraxılır "1000" ve id-ni "H" olaraq saxla
+* FP ödəniş et "${H}" "azercell" "501234567" "0.50"
+* FP ödəniş et "${H}" "azercell" "501234567" "0.50"
+* FP ödəniş et "${H}" "azercell" "501234567" "0.50"
+* FP ödəniş et "${H}" "azercell" "501234567" "0.50"
+* FP ödəniş et "${H}" "azercell" "501234567" "0.50"
+* FP ödəniş et "${H}" "azercell" "501234567" "0.50"
+* FP ödəniş et "${H}" "azercell" "501234567" "0.50"
+* FP ödəniş et "${H}" "azercell" "501234567" "0.50"
+* FP ödəniş et "${H}" "azercell" "501234567" "0.50"
+* FP ödəniş et "${H}" "azercell" "501234567" "0.50"
+* FP ödəniş et "${H}" "azercell" "501234567" "0.50"
+* FP ödəniş et "${H}" "azercell" "501234567" "0.50"
+* FP ödəniş et "${H}" "citynet" "CN123456" "5"
+* FP ödəniş et "${H}" "citynet" "CN123456" "5"
+* FP ödəniş et "${H}" "citynet" "CN123456" "5"
+* FP ödəniş et "${H}" "citynet" "CN123456" "5"
+* FP ödəniş et "${H}" "citynet" "CN123456" "5"
+* FP ödəniş et "${H}" "citynet" "CN123456" "5"

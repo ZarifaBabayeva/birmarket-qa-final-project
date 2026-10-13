@@ -1,0 +1,30 @@
+{
+  "Search Result Product Card": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[starts-with(@data-list-name,'search||')]"
+  },
+  "No Result Container": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[contains(@class,'MPProductsEmptySearch')]"
+  },
+  "No Result Title": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[contains(@class,'MPProductsEmptySearch')]//span[contains(normalize-space(.),'Sorğuya uyğun məhsul tapılmadı')]"
+  },
+  "No Result Hint": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[contains(@class,'MPProductsEmptySearch')]//span[contains(normalize-space(.),'Yazılış qaydasını yoxlayın')]"
+  },
+  "Categories Slider": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[contains(@class,'MPCategoriesSlider')]"
+  },
+  "Bestsellers Slider": {
+    "locatorType": "XPATH",
+    "locatorValue": "//*[contains(@class,'MPBestsellersSlider')]"
+  },
+  "Search Result Product Title": {
+    "locatorType": "XPATH",
+    "locatorValue": "//div[starts-with(@data-list-name,'search||')]//span[contains(@class,'MPTitle')]"
+  }
+}
